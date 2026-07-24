@@ -1,0 +1,39 @@
+# Local configuration and secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local databases and runtime files
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+tmp/
+
+# Frontend dependencies and generated output
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Local agent and design-session state
+.agents/
+.superpowers/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

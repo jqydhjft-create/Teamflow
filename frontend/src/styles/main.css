@@ -1,0 +1,76 @@
+:root {
+  color: #272b2c;
+  background: #f5f6f4;
+  font-family: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0;
+  --tf-text: #272b2c;
+  --tf-text-muted: #697071;
+  --tf-surface: #f5f6f4;
+  --tf-border: #dde1de;
+  --el-color-primary: #347c74;
+  --el-color-primary-light-3: #5f9993;
+  --el-color-primary-light-5: #87b2ad;
+  --el-color-primary-light-7: #b3ceca;
+  --el-color-primary-light-8: #cde0dd;
+  --el-color-primary-light-9: #e7f0ef;
+  --el-color-primary-dark-2: #29635d;
+  --el-border-radius-base: 6px;
+  --el-border-radius-small: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  max-width: 100%;
+  background: var(--tf-surface);
+}
+
+body {
+  min-width: 320px;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: clip;
+  color: var(--tf-text);
+  background: var(--tf-surface);
+}
+
+#app {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.project-dialog-window,
+.task-dialog-window {
+  max-width: calc(100vw - 24px);
+}
+
+.project-dialog-window .el-dialog__body,
+.task-dialog-window .el-dialog__body {
+  min-width: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  letter-spacing: 0;
+}
+
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid #ff8f7d;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
