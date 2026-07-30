@@ -142,11 +142,7 @@ TeamFlow/
 ├── alembic/                 # 数据库迁移及版本记录
 ├── frontend/                # Vue 3 前端应用与组件测试
 ├── tests/                   # 后端接口和权限测试
-├── docs/                    # 技术手册、设计规格和实施计划
-├── output/pdf/              # 已生成并由测试校验的文档产物
-├── tools/                   # 文档构建工具
 ├── docker-compose.yml       # FastAPI、MySQL、Redis 编排
-├── PROJECT_HANDOFF.md       # 当前实现、决策、边界和交接信息
 └── TeamFlow_项目技术文档.md  # 项目技术设计说明
 ```
 
@@ -181,13 +177,9 @@ pnpm build
 - [OpenAPI JSON](http://127.0.0.1:8000/openapi.json)
 - [ReDoc](http://127.0.0.1:8000/redoc)
 
-仓库内文档：
+仓库内技术文档：
 
 - [项目技术文档](TeamFlow_项目技术文档.md)
-- [项目交接文档](PROJECT_HANDOFF.md)
-- [功能设计规格](docs/superpowers/specs/)
-- [实施计划](docs/superpowers/plans/)
-- [Codex 生产应用工作流手册](docs/codex-production-application-workflow-zh.md)
 
 当前后端提供认证、项目、成员、任务、批量排序、评论、统计和活动日志接口。README 不重复维护每个请求体和响应体，以运行中的 OpenAPI 文档和当前代码为准。
 

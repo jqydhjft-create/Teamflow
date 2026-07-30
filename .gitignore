@@ -31,9 +31,16 @@ frontend/coverage/
 .agents/
 .superpowers/
 
+# Internal planning and generated handbook material (kept locally only)
+PROJECT_HANDOFF.md
+docs/superpowers/
+docs/codex-production-application-workflow-zh.md
+output/pdf/codex-production-application-workflow-zh.pdf
+tools/build_codex_workflow_pdf.py
+tests/test_codex_workflow_pdf.py
+
 # Editors and operating systems
 .idea/
 .vscode/
 .DS_Store
 Thumbs.db
-
